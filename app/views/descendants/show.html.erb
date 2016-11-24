@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @descendant.name %>
+</p>
+
+<p>
+  <strong>Child:</strong>
+  <%= @descendant.child %>
+</p>
+
+<%= link_to 'Edit', edit_descendant_path(@descendant) %> |
+<%= link_to 'Back', descendants_path %>

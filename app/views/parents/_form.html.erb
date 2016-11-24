@@ -1,0 +1,13 @@
+<%= simple_form_for @parent, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.simple_fields_for :children, @parent.children.build do |c| %>
+    <%= c.input :name %>
+    <%= c.simple_fields_for :descendants, c.object.descendants.build do |d| %>
+      <%= d.input :name %>
+    <% end %>
+  <% end %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                parents_path, :class => 'btn btn-default' %>
+<% end %>

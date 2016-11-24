@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Descendants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Child</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @descendants.each do |descendant| %>
+      <tr>
+        <td><%= descendant.name %></td>
+        <td><%= descendant.child %></td>
+        <td><%= link_to 'Show', descendant %></td>
+        <td><%= link_to 'Edit', edit_descendant_path(descendant) %></td>
+        <td><%= link_to 'Destroy', descendant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Descendant', new_descendant_path %>

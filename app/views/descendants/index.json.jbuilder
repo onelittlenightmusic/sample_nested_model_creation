@@ -1,0 +1,1 @@
+json.array! @descendants, partial: 'descendants/descendant', as: :descendant
