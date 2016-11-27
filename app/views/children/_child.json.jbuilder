@@ -1,2 +1,2 @@
-json.extract! child, :id, :name, :parent_id, :created_at, :updated_at
-json.url child_url(child, format: :json)
+json.extract! child, :id, :name, :parent_id
+json.descendants{ json.array! child.descendants, partial: 'descendants/descendant', as: :descendant}
