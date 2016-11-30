@@ -1,1 +1,3 @@
-json.array! @parents, partial: 'parents/parent', as: :parent
+json.parents do
+  json.array! @parents, partial: 'parents/parent', as: :parent
+end
