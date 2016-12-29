@@ -9,10 +9,10 @@ class Parent < ApplicationRecord
   def brothers=(params={})
     self.brothers_attributes = params
   end
-  def as_json(options = nil)
-    {
-    #id: id,
-    parent_name: name,
-    }
-  end
+  #def as_json(options = nil)
+  #  {
+  #  #id: id,
+  #  parent_name: name,
+  #  }
+  #end
 end
