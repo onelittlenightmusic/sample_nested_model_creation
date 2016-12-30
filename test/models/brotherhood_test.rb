@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class BrotherTest < ActiveSupport::TestCase
+class BrotherhoodTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

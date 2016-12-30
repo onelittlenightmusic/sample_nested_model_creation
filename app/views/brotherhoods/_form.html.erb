@@ -1,0 +1,10 @@
+<%= simple_form_for @brotherhood, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :parent_id %>
+  <%= error_span(@brotherhood[:parent_id]) %>
+  <%= f.input :parent2_id %>
+  <%= error_span(@brotherhood[:parent2_id]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                brotherhoods_path, :class => 'btn btn-default' %>
+<% end %>

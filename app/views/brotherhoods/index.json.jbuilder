@@ -1,0 +1,1 @@
+json.array! @brotherhoods, partial: 'brotherhoods/brotherhood', as: :brotherhood

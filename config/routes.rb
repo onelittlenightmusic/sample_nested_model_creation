@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :brothers
+  resources :brotherhoods
   resources :descendants
   resources :children
   resources :parents do

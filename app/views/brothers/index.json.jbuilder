@@ -1,1 +1,0 @@
-json.array! @brothers, partial: 'brothers/brother', as: :brother
